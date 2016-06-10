@@ -14,8 +14,8 @@ tiles.forEach(function (tile) {
     tile.printPosition();
     var elemDiv = document.createElement('div');
     var color = 'rgb(255,0,' + Math.round((255/tiles.length) * t) + ')';
-    elemDiv.style.cssText = 'position:absolute;top:' + ((tile.position.getY() * 20) + 600) + 'px;left:' + ((tile.position.getX() * 20) + 600) + 'px;width:10px;height:10px;background:'+color+';';
-
+    elemDiv.style.cssText = 'position:absolute;top:' + ((tile.position.getY() * 20) + 200) + 'px;left:' + ((tile.position.getX() * 20) + 400) + 'px;width:30px;height:30px;line-height:30px;text-align:center;color:white;background:'+color+';';
+    elemDiv.innerHTML = t;
 
     document.body.appendChild(elemDiv);
 });
